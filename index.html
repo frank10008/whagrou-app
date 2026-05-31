@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WhaGrOU — warm 1:1 WhatsApp outreach</title>
+  <meta name="description" content="WhaGrOU helps you stay personally connected on WhatsApp — reconnect with people you've lost touch with, remember who everyone is, and message group members one-to-one. Every message is yours to approve. Nothing sends without you." />
+  <meta property="og:title" content="WhaGrOU — warm 1:1 WhatsApp outreach" />
+  <meta property="og:description" content="Reconnect with people, in your own voice. A calm desktop app — never a blast." />
+  <meta property="og:image" content="./og.png" />
+  <link rel="icon" href="./icon.png" />
+  <style>
+    :root{
+      --sand-50:#faf7f2; --sand-100:#f3ece0; --sand-200:#e6d8c3; --sand-600:#8c6a3f; --sand-700:#6f5333;
+      --ink-900:#1b1b18; --ink-800:#2c2c28; --ink-600:#56564f; --ink-400:#8a8a82; --line:#e7e7e4;
+      --grad: linear-gradient(160deg,#F6CB73 0%,#DD9A52 55%,#BE6A36 100%);
+    }
+    *{box-sizing:border-box} html,body{margin:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Inter','Segoe UI',sans-serif;color:var(--ink-800);background:var(--sand-50);line-height:1.55;-webkit-font-smoothing:antialiased}
+    .wrap{max-width:880px;margin:0 auto;padding:0 22px}
+    a{color:var(--sand-700)}
+    /* hero */
+    header{text-align:center;padding:70px 0 36px}
+    .logo{width:108px;height:108px;border-radius:26px;box-shadow:0 14px 34px rgba(90,59,28,.28);display:block;margin:0 auto 20px}
+    h1{font-size:40px;letter-spacing:-.02em;margin:.1em 0;color:var(--ink-900)}
+    .tag{font-size:19px;color:var(--ink-600);max-width:560px;margin:8px auto 0}
+    .pill{display:inline-block;margin-top:18px;font-size:13px;color:var(--sand-700);background:var(--sand-100);border:1px solid var(--sand-200);border-radius:999px;padding:5px 14px}
+    /* buttons */
+    .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+    .btn{display:inline-flex;align-items:center;gap:9px;border-radius:13px;padding:13px 22px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid transparent}
+    .btn.mac{background:var(--grad);color:#fff;box-shadow:0 8px 20px rgba(190,106,54,.32)}
+    .btn.win{background:#fff;color:var(--ink-600);border-color:var(--line)}
+    .btn small{font-weight:500;opacity:.85}
+    .soon{font-size:11px;background:rgba(0,0,0,.12);color:#fff;border-radius:6px;padding:2px 6px;margin-left:2px}
+    /* sections */
+    section{padding:30px 0;border-top:1px solid var(--line)}
+    h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-400);margin:0 0 18px}
+    .cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+    .card h3{margin:.2em 0 .4em;font-size:17px;color:var(--ink-900)}
+    .card p{margin:0;font-size:14.5px;color:var(--ink-600)}
+    .steps{counter-reset:s;display:grid;gap:14px}
+    .step{display:flex;gap:14px;align-items:flex-start}
+    .step b{flex:none;width:30px;height:30px;border-radius:50%;background:var(--sand-600);color:#fff;display:grid;place-items:center;font-size:14px}
+    .step p{margin:3px 0;color:var(--ink-600);font-size:15px}
+    .step p strong{color:var(--ink-900)}
+    .note{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+    .note code{background:var(--sand-100);border:1px solid var(--sand-200);border-radius:6px;padding:2px 7px;font-size:13px}
+    .muted{color:var(--ink-400);font-size:13.5px}
+    footer{padding:40px 0 60px;text-align:center;color:var(--ink-400);font-size:13px;border-top:1px solid var(--line);margin-top:10px}
+    @media(max-width:680px){.cards{grid-template-columns:1fr}h1{font-size:32px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img class="logo" src="./icon.png" alt="WhaGrOU" />
+      <h1>WhaGrOU</h1>
+      <p class="tag">Stay personally connected on WhatsApp — reconnect with people you've lost touch with, remember who everyone is, and reach group members one&#8209;to&#8209;one. In your own voice.</p>
+      <div class="pill">Nothing ever sends without your approval</div>
+      <div class="cta">
+        <a class="btn mac" href="https://github.com/frank10008/whagrou-app/releases/latest/download/WhaGrOU-2.0.0-arm64-mac.zip">↓ Download for Mac <small>· Apple Silicon</small></a>
+        <a class="btn win" href="#windows">↓ Download for Windows <span class="soon">soon</span></a>
+      </div>
+    </header>
+
+    <section>
+      <h2>What it does</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>🌱 Reconnect</h3>
+          <p>It quietly finds people you haven't spoken to in a while — a balanced mix of recent and long&#8209;lost — and writes each one a short, warm message picking up a real thread.</p>
+        </div>
+        <div class="card">
+          <h3>🧠 Remember</h3>
+          <p>Every contact gets a living profile: who they are, their language, the way you write to them, your shared history, and a little note so you always know who's who.</p>
+        </div>
+        <div class="card">
+          <h3>💬 Invite personally</h3>
+          <p>Pick a group, say what you want — "invite everyone to Sunday" — and it drafts an individual 1:1 for each member. Not a broadcast. A personal note to each.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>How it works</h2>
+      <div class="steps">
+        <div class="step"><b>1</b><p><strong>Link WhatsApp</strong> — scan a QR once, the same way as WhatsApp Web. Your messages stay on your computer; there's no server.</p></div>
+        <div class="step"><b>2</b><p><strong>It learns your voice</strong> — from your own past messages, so drafts sound like you (your greetings, your length, your emoji) and in each person's language.</p></div>
+        <div class="step"><b>3</b><p><strong>You review</strong> — read each draft, edit anything, approve the good ones, skip the rest. You're always in control.</p></div>
+        <div class="step"><b>4</b><p><strong>It sends, gently</strong> — approved messages go out one at a time with natural pauses and a daily limit. No spam, no blasting.</p></div>
+      </div>
+    </section>
+
+    <section id="install">
+      <h2>Install on Mac</h2>
+      <div class="note">
+        <p style="margin-top:0"><strong>1.</strong> Download <a href="https://github.com/frank10008/whagrou-app/releases/latest/download/WhaGrOU-2.0.0-arm64-mac.zip"><code>WhaGrOU-2.0.0-arm64-mac.zip</code></a> and unzip it. Drag <strong>WhaGrOU</strong> into your <strong>Applications</strong> folder.</p>
+        <p><strong>2.</strong> The first time, macOS may say it's from an unidentified developer. <strong>Right‑click the app → Open → Open.</strong> (You only do this once.)</p>
+        <p style="margin-bottom:0" class="muted">If it still won't open, open Terminal and run: <code>xattr -dr com.apple.quarantine /Applications/WhaGrOU.app</code></p>
+      </div>
+    </section>
+
+    <section id="windows">
+      <h2>Windows</h2>
+      <div class="note">
+        <p style="margin:0">A Windows version is on the way. WhaGrOU is built to run on Windows too — we just need to produce and test the Windows build. Want it first? <a href="mailto:?subject=WhaGrOU%20for%20Windows">Let us know</a> and we'll prioritise it.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>What it costs</h2>
+      <p class="muted" style="margin:0 0 16px">WhaGrOU is free. The only cost is the AI that writes the drafts — billed by Anthropic to <strong>your own key</strong>, and it's small. There's no subscription, and you pay only for what you use.</p>
+      <div class="cards">
+        <div class="card"><h3 style="font-size:24px">~1¢</h3><p>per draft</p></div>
+        <div class="card"><h3 style="font-size:24px">~$0.50–1.50</h3><p>a batch of 50 reconnections</p></div>
+        <div class="card"><h3 style="font-size:24px">~$2–6<span style="font-size:15px">/mo</span></h3><p>reaching ~50–100 people a week</p></div>
+      </div>
+      <p class="muted" style="margin:14px 0 0">Profiles are built only when you actually message someone, so you never pay up front. <a href="https://github.com/frank10008/whagrou-app/blob/main/COSTS.md">Full cost breakdown →</a></p>
+    </section>
+
+    <section>
+      <h2>Your privacy</h2>
+      <p class="muted" style="margin:0">WhaGrOU runs entirely on your own computer. Your contacts, chats, and drafts live in a local file on your Mac — there is no WhaGrOU server and nothing is uploaded. Drafting uses your own AI key. You decide what gets sent, and to whom.</p>
+    </section>
+
+    <footer>
+      WhaGrOU · a warm 1:1 outreach tool · made with care for the Art of Living community
+    </footer>
+  </div>
+</body>
+</html>
