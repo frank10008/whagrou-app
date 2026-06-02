@@ -22,6 +22,37 @@ server and nothing is uploaded.
 
 ---
 
+## Bring in your old chats (optional)
+
+WhaGrOU writes in *your* voice by reading how you've actually talked with each
+person — so the more history it can see, the better the drafts. For anyone who
+matters to you, you can hand WhaGrOU the whole backstory straight from WhatsApp.
+
+1. **Export the chat from WhatsApp** (on your phone):
+   - **iPhone** — open the chat → tap the person's name at the top → scroll down →
+     **Export Chat** → **Without Media**.
+   - **Android** — open the chat → **⋮** (top‑right) → **More** → **Export chat** →
+     **Without Media**.
+   - Send the file to yourself (AirDrop, email, or *Save to Files*) so it lands on
+     your Mac. It's a plain `.txt` file.
+
+2. **Tell WhaGrOU who *you* are.** In **Settings → Identity → Your name**, type the
+   exact name that appears as the sender on *your* own messages in the export. That's
+   how WhaGrOU tells your side of the conversation from theirs. You only do this once.
+
+3. **Import it.** Go to **Settings → Import old data → WhatsApp chat export →
+   Choose .txt** and pick the file you exported. WhaGrOU reads the full history,
+   matches it to the right contact (or creates one), and skips anything it already
+   has — so re‑importing is always safe.
+
+> Have a spreadsheet of people instead? **Settings → Import old data → Contacts CSV**
+> adds them in bulk from a simple `name, phone` file.
+
+The export is read **locally on your Mac and never uploaded** — same as everything
+else in WhaGrOU.
+
+---
+
 ## Your everyday flow — daily reconnections
 
 **Today** → click **Scan & draft**. WhaGrOU picks a balanced set of stale contacts (some
@@ -72,7 +103,7 @@ A few things that make this work even when WhatsApp hides numbers:
 | **Review** | All drafts awaiting approval, across reconnections and groups. |
 | **Outbox** | What's queued, sent, failed, or skipped — your delivery log. |
 | **Activity** | An audit trail of every draft, approval, and send. |
-| **Settings** | WhatsApp link, AI key, sending pace + daily cap, quiet hours, your name. |
+| **Settings** | WhatsApp link, AI key, import old chats, sending pace + daily cap, quiet hours, your name. |
 
 ---
 
