@@ -32,6 +32,7 @@ per message — which keeps batch costs down.
 | Building one **contact profile** (once) | ~ **2¢** |
 | A **batch of 50** reconnections (first time, profiles + drafts) | ~ **$1–1.50** |
 | The same batch later (profiles already built) | ~ **$0.50** |
+| A personal note to a **300‑member group** (rotated variations) | ~ **20–40¢** |
 | Profiling **all ~2,000 contacts** once (spread out, only as you use them) | ~ **$30–40 total, one time** |
 | A teacher reconnecting with **~50–100 people a week** | ~ **$2–6 / month** |
 
@@ -42,7 +43,9 @@ So a typical teacher spends a **few dollars a month**, often less. Profiles are 
 
 - Drafts default to **Sonnet**, not Opus — Opus is opt‑in for "make this one perfect."
 - Caching means re‑scanning the same batch is cheap.
+- **Large groups rotate** a handful of wording variations instead of writing one draft per
+  person — so reaching a 300‑member group costs cents, not dollars.
 - You set a **daily cap**, which also caps spend.
 
-> Want to watch your spend live? WhaGrOU can show a **Usage & cost** panel (tokens used +
-> estimated $) — ask and it'll be added.
+> Want to watch your spend live? **Settings → Usage & cost** shows tokens used and the
+> estimated dollar amount, today and this month.
