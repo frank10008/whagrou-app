@@ -25,8 +25,37 @@ server and nothing is uploaded.
 ## Bring in your old chats (optional)
 
 WhaGrOU writes in *your* voice by reading how you've actually talked with each
-person — so the more history it can see, the better the drafts. For anyone who
-matters to you, you can hand WhaGrOU the whole backstory straight from WhatsApp.
+person — so the more history it can see, the better the drafts. There are two ways
+to bring your history in.
+
+### Option A — Everything at once (full backup, Android)
+
+Import your entire WhatsApp history — every 1:1 contact and all their messages — in
+one go. This is the fastest way to get set up.
+
+1. **Turn on an encrypted backup with a 64‑digit key.** On your phone, open
+   **WhatsApp → Settings → Chats → Chat backup → End‑to‑end encrypted backup →
+   Turn on**, and choose **"Use a 64‑digit encryption key instead"** (not a
+   password). Write the 64‑character key down — you'll paste it into WhaGrOU. Let the
+   backup finish.
+
+2. **Copy your database file to your computer.** Connect your Android phone by USB
+   and copy the file at
+   `Internal storage → Android → media → com.whatsapp → WhatsApp → Databases →
+   msgstore.db.crypt15`
+   (older phones: `Internal storage → WhatsApp → Databases → msgstore.db.crypt15`).
+   It's the most recent `msgstore.db.crypt15`.
+
+3. **Import it.** In WhaGrOU go to **Settings → Import old data → Full WhatsApp
+   backup**, paste your **64‑digit key**, click **Choose backup**, and pick the
+   `msgstore.db.crypt15` file. WhaGrOU decrypts it **on your own computer**, then adds
+   every 1:1 contact and their full message history. Already‑imported messages are
+   skipped, so re‑importing is always safe.
+
+> **iPhone?** Apple doesn't let apps read the WhatsApp database file, so use Option B
+> below for the chats that matter most.
+
+### Option B — One chat at a time (any phone)
 
 1. **Export the chat from WhatsApp** (on your phone):
    - **iPhone** — open the chat → tap the person's name at the top → scroll down →
@@ -34,7 +63,7 @@ matters to you, you can hand WhaGrOU the whole backstory straight from WhatsApp.
    - **Android** — open the chat → **⋮** (top‑right) → **More** → **Export chat** →
      **Without Media**.
    - Send the file to yourself (AirDrop, email, or *Save to Files*) so it lands on
-     your Mac. It's a plain `.txt` file.
+     your computer. It's a plain `.txt` file.
 
 2. **Tell WhaGrOU who *you* are.** In **Settings → Identity → Your name**, type the
    exact name that appears as the sender on *your* own messages in the export. That's
@@ -48,8 +77,8 @@ matters to you, you can hand WhaGrOU the whole backstory straight from WhatsApp.
 > Have a spreadsheet of people instead? **Settings → Import old data → Contacts CSV**
 > adds them in bulk from a simple `name, phone` file.
 
-The export is read **locally on your Mac and never uploaded** — same as everything
-else in WhaGrOU.
+Everything you import is read **locally on your own computer and never uploaded** —
+same as everything else in WhaGrOU.
 
 ---
 
