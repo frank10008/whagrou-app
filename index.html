@@ -104,8 +104,10 @@
       <h2>Install on Mac</h2>
       <div class="note">
         <p style="margin-top:0"><strong>1.</strong> Download <a href="https://github.com/frank10008/whagrou-app/releases/latest/download/WhaGrOU-2.1.4-arm64-mac.zip"><code>WhaGrOU-2.1.4-arm64-mac.zip</code></a> and unzip it. Drag <strong>WhaGrOU</strong> into your <strong>Applications</strong> folder.</p>
-        <p><strong>2.</strong> The first time, macOS may say it's from an unidentified developer. <strong>Right‑click the app → Open → Open.</strong> (You only do this once.)</p>
-        <p style="margin-bottom:0" class="muted">If it still won't open, open Terminal and run: <code>xattr -dr com.apple.quarantine /Applications/WhaGrOU.app</code></p>
+        <p><strong>2.</strong> Open it once. macOS will block it — <strong>“Apple could not verify…”</strong> — because WhaGrOU isn't signed with an Apple developer certificate. That's expected for a free indie tool: the app is built straight from the public release you just downloaded. Click <strong>Done</strong> (not <em>Move to Trash</em>).</p>
+        <p><strong>3.</strong> Open <strong>System Settings → Privacy &amp; Security</strong>, scroll down to the <strong>Security</strong> section, and click <strong>Open Anyway</strong> next to the WhaGrOU message. Confirm with <strong>Open Anyway</strong> (Touch&nbsp;ID or your password). You only do this once — after that it opens like any other app.</p>
+        <p class="muted" style="margin-bottom:8px">On older macOS (14 Sonoma and earlier) there's a shortcut: <strong>right‑click the app → Open → Open</strong>. On macOS 15 Sequoia and later this no longer works — use the steps above.</p>
+        <p style="margin-bottom:0" class="muted">Power users can skip all of this in Terminal: <code>xattr -dr com.apple.quarantine /Applications/WhaGrOU.app</code></p>
       </div>
     </section>
 
@@ -113,7 +115,7 @@
       <h2>Install on Windows</h2>
       <div class="note">
         <p style="margin-top:0"><strong>1.</strong> Download <a href="https://github.com/frank10008/whagrou-app/releases/latest/download/WhaGrOU-2.1.4-setup.exe"><code>WhaGrOU-2.1.4-setup.exe</code></a> and run it. It installs just for you — no admin password needed.</p>
-        <p><strong>2.</strong> Windows may show a blue <strong>“Windows protected your PC”</strong> screen, because the app isn't code‑signed yet. Click <strong>More info → Run anyway</strong>. You only do this once.</p>
+        <p><strong>2.</strong> Windows SmartScreen may show a blue <strong>“Windows protected your PC”</strong> screen because the installer isn't code‑signed. That's expected for a free indie tool — the file is exactly the one you downloaded from the public release. Click <strong>More info</strong>, then <strong>Run anyway</strong>. You only do this once.</p>
         <p style="margin-bottom:0" class="muted">Prefer not to install? Grab the portable <code>.zip</code> from the <a href="https://github.com/frank10008/whagrou-app/releases/latest">releases page</a>, unzip it anywhere, and run <code>WhaGrOU.exe</code>.</p>
       </div>
     </section>

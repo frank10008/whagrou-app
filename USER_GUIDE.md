@@ -10,6 +10,33 @@ server and nothing is uploaded.
 
 ## First time (about 10 minutes)
 
+### Opening the app the first time
+
+WhaGrOU isn't signed with an Apple developer certificate (or a paid Windows one) —
+that's expected for a free indie tool; the app is built straight from the public
+release you downloaded. Your computer is just being cautious. You only do this once.
+
+**Mac — macOS 15 Sequoia and later:**
+
+1. Open WhaGrOU once. macOS blocks it ("Apple could not verify…"). Click **Done**
+   (not *Move to Trash*).
+2. Open **System Settings → Privacy & Security**, scroll down to the **Security**
+   section, and click **Open Anyway** next to the WhaGrOU message.
+3. Confirm with **Open Anyway** (Touch ID or your password). From then on it opens
+   like any other app.
+
+> **Older macOS (14 Sonoma and earlier)?** There's a shortcut: **right‑click the
+> app → Open → Open**. (On Sequoia and later this no longer works — use the steps
+> above.) Power users can instead run
+> `xattr -dr com.apple.quarantine /Applications/WhaGrOU.app` in Terminal.
+
+**Windows:**
+
+If SmartScreen shows a blue **"Windows protected your PC"** screen, click
+**More info**, then **Run anyway**.
+
+### Set it up
+
 1. **Open WhaGrOU** and go to **Settings**.
 2. **Link WhatsApp** — click *Open / Scan QR* and scan the code with your phone
    (WhatsApp → Linked Devices → Link a Device). This is the same as WhatsApp Web.
